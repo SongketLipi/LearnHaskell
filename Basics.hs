@@ -12,9 +12,12 @@ comment.
 -- var = value :: DataType
 
 -- variable name can be alphanumeric but can not start with an uppercase letter
+ 
 
 constantInteger :: Int
-constantInteger = 5
+constantInteger = 5 
+
+ 
 
 -- Int 2^63 -2^63
 maxInteger = maxBound :: Int
