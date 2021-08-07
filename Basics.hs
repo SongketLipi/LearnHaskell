@@ -1,10 +1,10 @@
 -- This is a single line comment
 
 {-
-This
-is a
-multiline 
-comment.
+    This
+    is a
+    multiline 
+    comment.
 -}
 
 -- Haskell variables are not mutable
@@ -25,9 +25,20 @@ minInteger = minBound :: Int
 
 -- Double
 doubleNumber = 2.0 :: Double
--- Char ''
+-- Char 
+{-
+    'a' - 'b' does not return an integer value (ASCII code)
+-}
 charA = 'a' :: Char
 -- Bool True | False
 iAmTrue = True :: Bool
 
+-- String
+{- 
+    A string can be treated as a list of `char`s.
+    However, numeric functions such as `sum` can't be performed,
+     because numeric operations can't be done on `char`s unlike Java/C#/other languages.
+
+-}
+name = "showrav"
  
