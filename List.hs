@@ -2,6 +2,8 @@
 listA = [69,420,121]
 listB = [121,1,2]
 
+-- a list must contain homogenous elements
+-- ['a',1,2] is invalid
 
 -- Concat multiple list by adding `++` between them
 listC = listA ++ listB
@@ -28,9 +30,15 @@ firstLetterOfA = stringA !! 0
 
 charListsA = [charListA, charListB]
 charListsB = [charListB, charListA]
-charListOfCharLists = [charListsA,charListsB]
+listOfCharLists = [charListsA,charListsB]
 
--- invalid tyeps !!#Wdasdsa
+-- ** interesting finding
+{-
+    --1 listA = [69,420,121]
+    --2 charListA = ['a','b','c','d']
+    --3 listOfLists = [listA,charListA]
+    for line `3`, the error will be shown for line 1. 
+-}
 
 -- head, tail, last, init
 headOfListA = head listA -- returns the 1st element
