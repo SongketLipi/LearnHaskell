@@ -54,5 +54,29 @@ isAEmpty = null listA
 reverseOfA = reverse listA
 -- check if an element exist or not
 checkOneInListA = elem 1 listA
--- return a list of n elements from a list starting from left
+-- return a list of n elements from a list starting from left; opposite of `drop`
 firstTwoElemenetsOfA = take 2 listA
+-- return a list not having n elements from a list start from left; opposit of `take`
+allElemnentsOfAExceptFirstTwo = drop 2 listA
+-- `maximum`/`minimum`; returns the maximum/minimum of a list
+maxOfListA = maximum listA
+--sum/
+sumOfListA = sum listA
+-- texas Ranges
+numberRange = [1..69]
+letterRange = [['A'..'Z'],['a'..'z']] -- can be applied in lists within a list
+allLetterRange = ['A'..'z'] -- ASCII squence; including non-valid enlish chars
+-- alphaNumeric = []
+{-- 
+    suquential progression; 
+    the value of (2nd element - 1st element) will decide how to increment
+--}
+four'sMultiples = [4,8..21] -- any element that does not meet the criteria within the range will be excluded
+-- *floating point ranges are unstable
+-- taking specific number of elements from start to infinity
+take2's5multiples = take 5 [2,4..]
+{-- 
+    ** cycling cause an infinite loop of the elements to come in that order over again and again.
+    If we don't take a finite amount then it will return a list of those element is sequential order in infinite length 
+--}
+take7FromCycleOfListA = take 7 (cycle listA) 

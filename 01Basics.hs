@@ -13,11 +13,15 @@
 
 -- variable name can be alphanumeric but can not start with an uppercase letter
  
+-- variable name can contains single quotation in it
+
+var'sValue = 5 :: Int
 
 constantInteger :: Int
 constantInteger = 5 
 
- 
+-- data type declaration is not always mandatory
+declareNoType = 15
 
 -- Int 2^63 -2^63
 maxInteger = maxBound :: Int
@@ -25,6 +29,8 @@ minInteger = minBound :: Int
 
 -- Double
 doubleNumber = 2.0 :: Double
+-- * a floating point less than zero must have `0` infront the `.`
+floatingPoint = -0.1
 -- Char 
 {-
     'a' - 'b' does not return an integer value (ASCII code)
@@ -40,5 +46,9 @@ iAmTrue = True :: Bool
      because numeric operations can't be done on `char`s unlike Java/C#/other languages.
 
 -}
-name = "showrav"
+
+
+name = "showrav" :: String
+
+
  
