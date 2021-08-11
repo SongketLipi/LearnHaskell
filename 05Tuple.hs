@@ -17,3 +17,10 @@ points3D = [x1y1z1,x1y1z1]
 firstElement = fst x1y1
 secondElement = snd x1y1
 -- * `firstElement = fst x1y1z1` not possible; three elements; same for `snd`
+
+-- zip method creates a one to one relations among lists and returns a list of tuples, possible upto the lowest length of list
+list1 = [1,2,3,4]
+list2 = ["String1","String2"]
+oneTOneT1T2 = zip list1 list2
+
+rightTriangles = [(a,b,c)| a <- [1..20],b <- [1..20],c <- [1..20], a^2 + b^2 == c^2]
