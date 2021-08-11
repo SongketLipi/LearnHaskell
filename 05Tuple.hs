@@ -3,7 +3,6 @@
 --}
 -- * a the elements of the tuples need not be homogenous
 -- an example can be the (x,y) and (x,y,z) co-ordinate systems
-import Graphics.UI.GLUT (PrimitiveMode(Points))
 x1y1 = (0,0) -- point 1 in x y
 x2y2 = (-6,4.5) -- point 2 in x y
 x1y1z1 = (0,0,0.0) -- point 1 in x y z
