@@ -27,6 +27,10 @@ declareNoType = 15
 maxInteger = maxBound :: Int
 minInteger = minBound :: Int
 
+-- Integer virtually no bound
+noBoundInteger = 2^1000000 -- kids don't try this at home
+
+
 -- Double
 doubleNumber = 2.0 :: Double
 -- * a floating point less than zero must have `0` infront the `.`

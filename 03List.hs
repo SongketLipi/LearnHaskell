@@ -80,3 +80,5 @@ take2's5multiples = take 5 [2,4..]
     If we don't take a finite amount then it will return a list of those element is sequential order in infinite length 
 --}
 take7FromCycleOfListA = take 7 (cycle listA) 
+-- `repeat`-ing an elements returns a list consisting of that element; *list length is inifinite
+firstTenRepetitionOf2 = take 10 (repeat 5) -- same as `replicate 10 5

@@ -1,7 +1,14 @@
 -- function/variable names can contain `'` (prime/single quotation symbol)
 -- Signature of a function
 -- Writing signature is not always mandatory
-doubleSmallNumber' :: (Ord a, Num a) => a -> a
+
+{--
+    Function Name           Domain     Mapto
+
+    doubleSmallNumber' ::   Int   ->   Int   
+--}
+
+doubleSmallNumber' :: Int -> Int
 -- definition of a function
 doubleSmallNumber'  x = if x > 100 
                         then x 
@@ -12,3 +19,4 @@ modNineTwo = mod 9 2
 
 -- a function can be put infix using `ticks` (`functionName`)
 nineModtwo = 9 `mod` 2                     
+
